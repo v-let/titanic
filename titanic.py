@@ -24,7 +24,7 @@ c = ColumnTransformer([
 
 pipe1 = Pipeline([
     ("c", c),
-    ("forest", RandomForestClassifier(n_estimators=100, random_state=42, max_depth=None, min_samples_leaf=3))
+    ("forest", RandomForestClassifier(n_estimators=200, random_state=42, max_depth=None, min_samples_leaf=3))
 ])
 
 pipe1.fit(X, y)
